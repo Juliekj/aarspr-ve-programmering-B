@@ -1,7 +1,12 @@
 class Tiger extends Dyr {
+
   Tiger() {
-    x = 50;
-    y= 600;
+    float a = random(0, 800);
+    int b = int(a);
+    x = b;
+    float c = random(0, 800);
+    int d = int(c);
+    y = d;
   }
 
   void display() {
