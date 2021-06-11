@@ -15,29 +15,20 @@ void setup() {
 
   W = new World();
   f = loadImage("Frog2.png");
-  t = loadImage("Tiger2.png");
+  t = loadImage("tiger3.png");
   S = loadImage("swamp.png");
 }
 
 void draw() {
   clear();
   W.tengTerrain();
- W.tegnDyr();
- 
-
+  W.tegnDyr();
 }
 
-void mousePressed(){
- W.lavTerrain();
-  
+void mousePressed() {
+  W.lavTerrain();
 }
 
 void keyPressed() {
- W.lavDyr();
- 
- 
+  W.lavDyr();
 }
-
-
-  
-  

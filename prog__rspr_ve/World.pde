@@ -45,9 +45,6 @@ class World {
   }
 
 
-
-
-
   void lavTerrain() {
     W.tengTerrain();
     W.WorldListTerrain.add(new Swamp());
@@ -62,13 +59,14 @@ class World {
   }
 
 
-void collision() {
+  void collision() {
     for ( Terrain T : WorldListTerrain) {
       for (Dyr d : worldListDyr) {
-        if (d.y > T.y && d.y < T.y + T.h    ) {
-          
+        if (d.y > T.y && d.y < T.y + T.h && d.x > T.x && d.x < T.x+ T.w) {
+          d.speedX = 0;
+          d.speedY = 0;
         }
       }
     }
-  }  
+  }
 }

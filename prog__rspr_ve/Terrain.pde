@@ -1,12 +1,9 @@
-class Terrain extends World{
-  
+class Terrain extends World {
+
   float x;
   float y;
-  
-  
-  void display(){
-  
-    
+  int h, w;
+
+  void display() {
   }
-  
 }
